@@ -10,8 +10,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<mahout.version>1.0-SNAPSHOT</mahout.version>
-		<!-- <mahout.version>0.10.0</mahout.version> -->
+		<!-- <mahout.version>1.0-SNAPSHOT</mahout.version> -->
+		<mahout.version>0.9</mahout.version>
 	</properties>
 
 	<dependencies>
