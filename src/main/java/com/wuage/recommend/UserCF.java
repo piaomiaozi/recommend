@@ -24,8 +24,11 @@ public class UserCF {
 	public void recommendUser() throws IOException, TasteException {
 		String fileName = "." + File.separator + "files" + File.separator
 				+ "item.csv";
+		//数据模型
 		DataModel model = new FileDataModel(new File(fileName));
+		//用户相似度
 		UserSimilarity user = new EuclideanDistanceSimilarity(model);
+		//用户最相似的组
 		NearestNUserNeighborhood neighbor = new NearestNUserNeighborhood(
 				NEIGHBORHOOD_NUM, user, model);
 		Recommender r = new GenericUserBasedRecommender(model, neighbor, user);
